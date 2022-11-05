@@ -1,0 +1,24 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;   
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    min-height: 100vh;
+}
+
+:root {
+    --light-purple-color: #8854c0;
+    --light-color: #fff;
+    --dark-color: #000;
+    --grey-color: #f2f2f2;
+    --transition: all 300ms ease-in-out;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
