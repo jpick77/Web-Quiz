@@ -32,6 +32,7 @@ var questions = [
       answer: "console.log"
     }
   ];
+  console.log(questions);
   
   var time = 50
   var i = 0
@@ -79,11 +80,5 @@ var questions = [
       </ul>
       `
   }
-
-  const NO_OF_HIGH_SCORES = 10;
-  const HIGH_SCORES = 'highScores';
-
-  const highScoreString = localStorage.getItem(HIGH_SCORES);
-  const highScores = JSON.parse(highScoreString) ?? [];
 
   
