@@ -80,4 +80,10 @@ var questions = [
       `
   }
 
+  const NO_OF_HIGH_SCORES = 10;
+  const HIGH_SCORES = 'highScores';
+
+  const highScoreString = localStorage.getItem(HIGH_SCORES);
+  const highScores = JSON.parse(highScoreString) ?? [];
+
   
