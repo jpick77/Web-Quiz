@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <title>Web Quiz!</title>
 </head>
 <body class="flex">
     <div class="wrapper">
         <div class="quiz-container">
-            <div class="quiz-head">
+            <div id="quiz-head">
                 <h1 class="quiz-title">Test Your Knowledge</h1>
                 <div class="timer" id="timer"> </div>
                 <div class="quiz-score">
@@ -29,11 +32,19 @@
 
                     </div>
                 </div>
+                <!-- Make a hidden div, when they hit the end screen function, you will unhide that div and it will have an input and a button to submit -->
+                <div class="hide" id="save-score">
+                    <p>You have finished!</p>
+                </div>
 
                 <div class="quiz-footer">
                     
                     <button type="button" id="play-again">Play</button>
                     <button type="button" id="high-scores">HighScores</button>
+                </div>
+
+                <div class="hiding" id="end-game">
+                    <button type="button" id="save-scores">Initials Here</button>
                 </div>
             </div>
            
