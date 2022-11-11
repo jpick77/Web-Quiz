@@ -68,6 +68,7 @@ var questions = [
         document.getElementById('correct-score').textContent = score
     }else {
         document.getElementById('result').textContent= "Wrong"
+        document.getElementById('result').style.display = "block";
         time -=5
     }
     i++
