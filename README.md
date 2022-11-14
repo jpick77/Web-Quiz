@@ -8,4 +8,12 @@ I used basic javaScript and CSS to make this quiz. I used for loops to create th
 https://jpick77.github.io/Web-Quiz/
 
 # Screenshots of Code and Website
-![Alt text](./assets/images/screen.shot.14.png "scree.shot.14.png")
+![Alt text](./images/screenshot20.png "screen.shot.20.png")
+![Alt text](./images/screenshot21.png "screen.shot.21.png")
+![Alt text](./images/screenshot22.png "screen.shot.22.png")
+![Alt text](./images/screenshot23.png "screen.shot.23.png")
+![Alt text](./images/screenshot24.png "screen.shot.24.png")
+![Alt text](./images/screenshot25.png "screen.shot.25.png")
+![Alt text](./images/screenshot26.png "screen.shot.26.png")
+![Alt text](./images/screenshot27.png "screen.shot.27.png")
+![Alt text](./images/screenshot28.png "screen.shot.28.png")
