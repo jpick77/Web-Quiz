@@ -163,6 +163,10 @@ p {
     display: none;
 }
 
+form {
+    display: none;
+}
+
 .timer{
     font-size: 30px;
     text-align: center;

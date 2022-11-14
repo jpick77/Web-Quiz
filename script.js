@@ -40,6 +40,13 @@ var questions = [
   let timerInterval;
   var gameOver = document.getElementById('end-game');
   var scoresSaved = document.getElementById('save-scores');
+  var inputEl = document.getElementById('initialsEl');
+  var saveBtn = document.getElementById('saveBtn');
+  var scores = document.getElementById('scores');
+  var highscoresBtn = document.getElementById('high-scores');
+  varscoreDisplay = document.getElementById('scoreDisplay');
+
+  var savedScores;
 
   var element = document.querySelector("#quiz-body");
   
@@ -77,6 +84,34 @@ var questions = [
 
   }
 
+  function saveScore() {
+    if(localStorage.getItem('scores')) {
+      savedScores = [localStorage.getItem('scores')];
+    } else {
+      savedScores = [];
+    }
+
+    var initialsScore = inputEl.value + " " + score.textContent;
+
+    savedScores.push(initialsScore);
+    localStorage.setItem('scores', savedScore);
+  };
+
+  function test() {
+    var scores = [localStorage.getItem('scores').split(',')];
+    console.log(localStorage.getItem('scores'));
+    console.log('scores');
+
+    scores.forEach(score => {
+      var li = document.createElement('li');
+      li.textContent = score;
+      scoreDisplay.append(li);
+    });
+  }
+
+  saveBtn.addEventListener('click', savedScore);
+  highscoresBtn.addEventListener('click', test);
+
 
   function showQuestion(){
     if (i >= 4) {
@@ -86,11 +121,15 @@ var questions = [
       function endGame() {
        var quizHead = document.getElementById('quiz-head');
        var playAgain = document.getElementById('play-again');
+       var quizbody = document.getElementById('quiz-body');
+       var scoreSaver = document.getElementById('scoreSaver');
        gameOver.style.display = "block";
        scoresSaved.style.display = "block";
        element.style.display = "none";
        quizHead.style.display = "none";
        playAgain.style.display = "none";
+       quizbody.style.display = "none";
+       scoreSaver.style.display = "block";
       }
       endGame(); 
       document.getElementById('save-score').classList = "";
