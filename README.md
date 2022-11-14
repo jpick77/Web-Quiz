@@ -5,3 +5,7 @@ In this challenge I was tasked with making a quiz where users could test their k
 I used basic javaScript and CSS to make this quiz. I used for loops to create the questions. I also used web API's to inplement the diffrent functions I wanted to preform.
 
 # Link to Deployed Page
+https://jpick77.github.io/Web-Quiz/
+
+# Screenshots of Code and Website
+![Alt text](./assets/images/screen.shot.14.png "scree.shot.14.png")
